@@ -89,15 +89,15 @@ export function NosotrosClient() {
         <div className="container-custom">
           <AnimatedSection className="text-center mb-12">
             <span className="inline-block text-brand-secondary font-semibold text-sm uppercase tracking-widest mb-3">
-              {t('Nuestro Equipo', 'Our Team')}
+              {t('Nuestros Proveedores', 'Our Providers')}
             </span>
             <h2 className="font-heading text-3xl md:text-5xl font-bold text-brand-primary mb-4">
-              {t('Médicos que se Preocupan por Usted', 'Doctors Who Care for You')}
+              {t('Un equipo médico con experiencia y corazón', 'A medical team with experience and heart')}
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto text-lg">
               {t(
-                'Profesionales bilingües y comprometidos con la salud y bienestar de nuestra comunidad.',
-                'Bilingual professionals committed to the health and wellbeing of our community.'
+                'Nuestro equipo combina años de experiencia clínica con un enfoque amigable, respetuoso y bilingüe para que usted y su familia se sientan escuchados y bien atendidos.',
+                'Our team combines years of clinical experience with a friendly, respectful, and bilingual approach so that you and your family feel heard and well cared for.'
               )}
             </p>
           </AnimatedSection>
@@ -107,7 +107,7 @@ export function NosotrosClient() {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto"
           >
             {TEAM.map((member) => (
               <TeamCard key={member.id} member={member} />

@@ -315,45 +315,31 @@ export const SERVICES: Service[] = [
 export const TEAM: TeamMember[] = [
   {
     id: 'dr-1',
-    name: 'Dr. Carlos Mendoza',
-    titleEs: 'Médico Familiar',
-    titleEn: 'Family Physician',
-    specialtyEs: 'Medicina Familiar y Preventiva',
+    name: 'Dr. Jean J. Philippe',
+    titleEs: 'Primary Physician',
+    titleEn: 'Primary Physician',
+    specialtyEs: 'Family & Preventive Medicine',
     specialtyEn: 'Family & Preventive Medicine',
     bioEs:
-      'El Dr. Mendoza cuenta con más de 12 años de experiencia atendiendo a familias hispanas en Georgia. Su enfoque humanista y bilingüe lo ha convertido en un médico de confianza para la comunidad latinoamericana.',
+      'El Dr. Philippe se dedica a la atención preventiva, el manejo de enfermedades crónicas y a ayudar a los pacientes a comprender su salud para que puedan tomar decisiones informadas con confianza.',
     bioEn:
-      'Dr. Mendoza has over 12 years of experience serving Hispanic families in Georgia. His humanistic, bilingual approach has made him a trusted physician in the Latin American community.',
-    languages: ['Español', 'English'],
-    photo: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop&crop=face',
+      'Dr. Philippe is dedicated to preventive care, chronic disease management, and helping patients understand their health so they can make confident decisions.',
+    languages: ['Español', 'English', 'Français'],
+    photo: '/images/dr-philippe.jpg',
   },
   {
     id: 'dr-2',
-    name: 'Dra. Laura Vargas',
-    titleEs: 'Pediatra',
-    titleEn: 'Pediatrician',
-    specialtyEs: 'Pediatría y Desarrollo Infantil',
-    specialtyEn: 'Pediatrics & Child Development',
+    name: 'Audrey Jones, FNP',
+    titleEs: 'Family Nurse Practitioner',
+    titleEn: 'Family Nurse Practitioner',
+    specialtyEs: 'Primary Care & Comprehensive Care',
+    specialtyEn: 'Primary Care & Comprehensive Care',
     bioEs:
-      'La Dra. Vargas se especializa en el cuidado integral de niños y adolescentes. Su paciencia y calidez hacen que tanto los pequeños como sus familias se sientan seguros y atendidos.',
+      'Audrey brinda atención compasiva basada en evidencia, tomándose el tiempo para responder preguntas, explicar las opciones de tratamiento y construir una relación de confianza con cada paciente.',
     bioEn:
-      'Dr. Vargas specializes in comprehensive care for children and adolescents. Her patience and warmth make both children and their families feel safe and cared for.',
-    languages: ['Español', 'English'],
-    photo: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop&crop=face',
-  },
-  {
-    id: 'dr-3',
-    name: 'Dr. Roberto Castillo',
-    titleEs: 'Internista',
-    titleEn: 'Internist',
-    specialtyEs: 'Medicina Interna y Enfermedades Crónicas',
-    specialtyEn: 'Internal Medicine & Chronic Disease',
-    bioEs:
-      'El Dr. Castillo es experto en el manejo de enfermedades crónicas como diabetes e hipertensión. Combina medicina basada en evidencia con un trato personalizado para cada paciente.',
-    bioEn:
-      'Dr. Castillo is an expert in managing chronic diseases like diabetes and hypertension. He combines evidence-based medicine with a personalized approach for each patient.',
-    languages: ['Español', 'English', 'Português'],
-    photo: 'https://images.unsplash.com/photo-1582750433449-648ed127bb54?w=400&h=400&fit=crop&crop=face',
+      'Audrey provides compassionate, evidence-based care and takes the time to answer questions, explain treatment options, and build trust with each patient.',
+    languages: ['English', 'Español'],
+    photo: '/images/audrey-jones.jpg',
   },
 ]
 

@@ -28,18 +28,6 @@ export function TeamCard({ member }: { member: TeamMember }) {
             className="object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/60 to-transparent" />
-          <div className="absolute bottom-4 left-4 right-4">
-            <div className="flex flex-wrap gap-1">
-              {member.languages.map((lang) => (
-                <span
-                  key={lang}
-                  className="bg-brand-accent text-white text-xs font-semibold px-2 py-0.5 rounded-full"
-                >
-                  {lang}
-                </span>
-              ))}
-            </div>
-          </div>
         </div>
 
         {/* Info */}
@@ -47,9 +35,6 @@ export function TeamCard({ member }: { member: TeamMember }) {
           <h3 className="font-heading text-xl font-bold text-brand-primary">{member.name}</h3>
           <p className="text-brand-secondary font-semibold text-sm mt-1">
             {t(member.titleEs, member.titleEn)}
-          </p>
-          <p className="text-gray-500 text-xs mt-0.5 mb-3">
-            {t(member.specialtyEs, member.specialtyEn)}
           </p>
           <p className="text-gray-600 text-sm leading-relaxed">
             {t(member.bioEs, member.bioEn)}
