@@ -1,0 +1,133 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+  --font-mono: monospace;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+
+  /* Brand colors */
+  --color-brand-primary: #1B4F8A;
+  --color-brand-secondary: #2E8B57;
+  --color-brand-base: #FAFAF8;
+  --color-brand-accent: #C9A227;
+  --color-brand-primary-dark: #153d6b;
+  --color-brand-secondary-dark: #246945;
+}
+
+:root {
+  --background: #FAFAF8;
+  --foreground: #1a1a1a;
+  --card: #ffffff;
+  --card-foreground: #1a1a1a;
+  --popover: #ffffff;
+  --popover-foreground: #1a1a1a;
+  --primary: #1B4F8A;
+  --primary-foreground: #ffffff;
+  --secondary: #2E8B57;
+  --secondary-foreground: #ffffff;
+  --muted: #f0f4f8;
+  --muted-foreground: #64748b;
+  --accent: #C9A227;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #1B4F8A;
+  --radius: 0.75rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body), 'Source Sans 3', system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading), 'Playfair Display', Georgia, serif;
+    line-height: 1.2;
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .font-heading {
+    font-family: var(--font-heading), 'Playfair Display', Georgia, serif;
+  }
+
+  .font-body {
+    font-family: var(--font-body), 'Source Sans 3', system-ui, sans-serif;
+  }
+
+  .bg-brand-primary { background-color: #1B4F8A; }
+  .bg-brand-secondary { background-color: #2E8B57; }
+  .bg-brand-base { background-color: #FAFAF8; }
+  .bg-brand-accent { background-color: #C9A227; }
+
+  .text-brand-primary { color: #1B4F8A; }
+  .text-brand-secondary { color: #2E8B57; }
+  .text-brand-accent { color: #C9A227; }
+
+  .border-brand-primary { border-color: #1B4F8A; }
+  .border-brand-secondary { border-color: #2E8B57; }
+  .border-brand-accent { border-color: #C9A227; }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+/* GHL Embed Styles */
+.ghl-form-wrapper iframe,
+.ghl-calendar-wrapper iframe {
+  width: 100%;
+  min-height: 600px;
+  border: none;
+  border-radius: 16px;
+}
