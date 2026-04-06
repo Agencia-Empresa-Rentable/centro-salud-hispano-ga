@@ -18,7 +18,7 @@ export const BUSINESS = {
   googleMapsEmbed:
     'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3312.1!2d-84.2439759!3d33.9536295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f5a1c849d5db45%3A0x1e15afa0afec8248!2sCentro%20de%20Salud%20Hispano%20de%20Georgia!5e0!3m2!1ses!2sus!4v1680000000000!5m2!1ses!2sus',
   googleMapsUrl:
-    'https://www.google.com/maps/place/Centro+de+Salud+Hispano+de+Georgia/@33.9536295,-84.2439759,17z',
+    'https://www.google.com/maps/search/?api=1&query=Centro+de+Salud+Hispano+de+Georgia,+3475+Holcomb+Bridge+Rd,+Peachtree+Corners,+GA+30092',
   siteUrl: 'https://centrodesaludhispanoga.com',
   slogan: 'Su Salud, Nuestra Misión',
   sloganEn: 'Your Health, Our Mission',
@@ -474,18 +474,18 @@ export const WHY_US = [
     titleEs: 'Hablamos su Idioma',
     titleEn: 'We Speak Your Language',
     descEs:
-      'Todo nuestro personal es completamente bilingüe. Se comunicará con su médico directamente en español, sin barreras ni malentendidos.',
+      'Todo nuestro personal es completamente bilingüe. Se comunicará con su médico directamente en español o en inglés, sin barreras ni malentendidos.',
     descEn:
-      'Our entire staff is fully bilingual. You will communicate with your doctor directly in Spanish, without barriers or misunderstandings.',
+      'Our entire staff is fully bilingual. You will communicate with your doctor directly in Spanish or in English, without barriers or misunderstandings.',
   },
   {
     icon: '🤝',
-    titleEs: 'Sin Barreras de Seguro',
-    titleEn: 'No Insurance Barriers',
+    titleEs: 'Sin Seguro Médico, No hay Problema',
+    titleEn: 'No Insurance? No Problem',
     descEs:
-      'Atendemos a todos los pacientes, con o sin seguro médico. Aceptamos efectivo, débito y crédito. Su salud no puede esperar.',
+      'No trabajamos con seguros médicos, por lo que nuestros precios son accesibles y directos. Aceptamos efectivo, débito y crédito. Reciba atención de calidad sin complicaciones.',
     descEn:
-      'We see all patients, with or without insurance. We accept cash, debit and credit. Your health cannot wait.',
+      'We do not work with medical insurance, which allows us to offer straightforward, affordable pricing. We accept cash, debit, and credit. Quality care without the complexity.',
   },
   {
     icon: '📍',
